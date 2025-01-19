@@ -3,90 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peddy website</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <title>Peddy Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- daisyUi and tailwind-css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+    #spinner{
+      display:none ;
+      width: 40px;
+      height: 40px;
+      margin: 20px auto;
+      border: 4px solid rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      border-top-color: #ffffff;
+      animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+      0%{
+          transform: rotate(360deg);
+      }
+      100%{
+          transform: rotate(360deg);
+      }
+  }
+</style>
 <body>
-    <!-- header--- -->
-<header>
-<nav>
-    <div class="navbar bg-base-100">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <div class="flex text-xl font-bold gap-2">
-             <img src="images/logo.webp" alt="">
-             <h1>Peddy</h1>
-            </div>
-           
-           
-          </div>
-        </div>
-        <div class="navbar-center">
-          <a class="btn btn-ghost ">Home</a>
-          <a class="btn btn-ghost ">Shop</a>
-          <a class="btn btn-ghost ">Contact</a>
-        </div>
-        <div class="navbar-end">
-          
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </button>
-          <button class="btn btn-ghost btn-circle">
-            <div class="indicator">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-              </svg>
-              <span class="badge badge-xs badge-primary indicator-item"></span>
-            </div>
-          </button>
-        </div>
-      </div>
-</nav>
+    <header class="w-11/12 mx-auto">
+        <nav>
+            <div class="navbar">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow-xl">
+                      <li><a>Home</a></li>
+                      <li><a>Shop</a> </li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl"><img src="./images/logo.webp" alt=""><span class="font-bold text-xl">Peddy</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 items-center">
+                    <li><a>Home</a></li>
+                    <li>Shop</li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="w-10 h-10 rounded-full border border-[#0e798126] flex justify-center items-center"><span><i class="fa-solid fa-user"></i></span></a>
+                </div>
+              </div>
+        </nav>
+        <!-- banner section -->
+         <div class=" p-10">
+            <h1 class=" lg:w-[50%] mx-auto text-center">
+                <span>Bringing Families Together ❤‍🔥</span><br><br>
+                <span class="text-5xl text-center font-semibold text-[#131313]">Your Path to Adoption <br> Starts Here</span><br><br>
+            </h1>
+            <p class="text-[#131313] lg:w-[50%] mx-auto text-center">Adopting a pet is a rewarding journey that not only provides a loving home for an animal in need but also enriches your life with joy and companionship. By choosing adoption, you are making a meaningful difference in the life of a furry friend.</p>
+            <br>
+           <div class="flex justify-center"> <button  id="viewMoreBtn"  class="btn text-[#FFFF] bg-[#0E7A81] px-8 ">View More</button></div>
+           <br>
+           <div class=" lg:w-[50%] mx-auto">
+            <img src="./images/pet.webp" alt="">
+           </div>
+         </div>
+    </header>
+    <br><br>
+    <main class="lg:w-11/12 mx-auto  space-y-4 mb-4 p-2">
+      <section>
+        <!-- Adopt  Your  Best Friend -->
+         <div id="adoptSection" class="lg:w-[50%] mx-auto text-center space-y-4 adopt-your-best-friend">
+          <h2 class="font-semibold text-3xl">Adopt  Your  Best Friend</h2>
+          <p>Adopting a pet means gaining a loyal companion who will fill your life with joy and love. Open your heart and home to your best friend today!.</p>
+         </div>
+      </section>
+      <div id="modal" class="modal hidden">
 
-<section>
-    <div>
-        <h3 class="font-semibold text-center mt-8 ">Bringing Families Together ❤️‍🔥</h3>
-        <h1 class="text-5xl font-bold text-center mt-8">Your Path to Adoption <br> Starts Here</h1>
-        <p class="text-center mt-8 font-semibold">It is a long established fact that a reader will be distracted by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has a.</p>
-    </div>
+   
 
+  
+      <script src="index.js"></script>
 
-    <div class="flex justify-center w-full h-full">
-        <img src="images/pet.webp" alt="">
-    </div>
-
-    <div>
-        <h1 class="text-2xl font-bold text-center mt-8">Adopt  Your  Best Friend</h1>
-        <p class="text-center mt-5 font-semibold">It is a long established fact that a reader will be distracted by the readable content of a page when looking <br> at its layout. The point of using Lorem Ipsum is that it has a.</p>
-    </div>
-<!-- --------------------------------------- -->
-
-
-</section>
-
-
-</header>
-<!--     -->
-    <script src="index.js"></script>
 </body>
 </html>
