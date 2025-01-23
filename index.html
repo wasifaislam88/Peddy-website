@@ -10,6 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
 
 
@@ -101,7 +102,7 @@
             </div>
 
             <!-- img -->
-            <div class="flex justify-center">
+            <div class="flex justify-center gap-3">
                 <img src="./images/pet.webp" alt="pet">
             </div>
         </section>
@@ -125,7 +126,7 @@
 
         <div id="spinner"></div>
 
-        <section  class="gap-4 grid grid-cols-4  p-4 rounded  mx-5 lg:mx-0">
+        <section  class="gap-4 grid grid-cols-1 lg:grid-cols-4  p-4 rounded  mx-5 lg:mx-0">
             <!-- card -->
             <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  col-span-3 gap-4">
             </div>
@@ -158,13 +159,13 @@
     </main>
 
 
-    <footer class="bg-[#131313] mt-20">
+    <footer class="bg-[#131313] p-6 mt-10 lg:mt-24 md:mt-16 ">
         <section class="container mx-auto flex-col md:flex-row flex justify-between py-20 px-5">
             <!-- col-1 -->
-            <div class=" text-white">
-                <div class="flex  items-center mb-5">
+            <div class=" text-white ">
+                <div class="flex items-center mb-5">
                     <div><img src="./images/logo.webp" alt="logo"></div>
-                    <h1 class="text-3xl ml-3">peddy</h1>
+                    <h1 class="text-2xl ml-3">peddy</h1>
                 </div>
                 <div class="space-y-2 text-gray-300 text-[16px] lg:text-[16px] md:text-xs ">
                     <p>Location: av. Washington 165, NY CA </p>
@@ -183,8 +184,8 @@
 
             <!-- col-2 -->
             <div class="lg:text-xl md:text-xs text-[16px]">
-                <h2 class="text-white text-2xl mb-5 mt-16 text-center md:mt-0">Useful Links</h2>
-                <div class="space-y-2 text-gray-500 text-center">
+                <h2 class="text-white text-2xl mb-5 mt-16 md:mt-0">Useful Links</h2>
+                <div class="space-y-2 text-gray-500 ">
                     <p>Home</p>
                     <p>About Us</p>
                     <p>Animals</p>
@@ -195,9 +196,9 @@
 
             <!-- col-3 -->
             <div class="space-y-3">
-                <h2 class="text-white text-2xl mb-5 mt-10 text-center md:mt-0">Drop a Message</h2>
-                <input type="text" placeholder="Enter your email" class="input input-bordered items-center w-full max-w-xs bg-gray-600 " />
-                <div><button class="btn bg-[#0E7A81] border-none text-white md:text-xl px-28 md:px-20">Subscribe</button>
+                <h2 class="text-white text-2xl mb-5 mt-10  md:mt-0">Drop a Message</h2>
+                <input type="text" placeholder="Enter your email" class="input input-bordered  w-full max-w-xs bg-gray-600 " />
+                <div><button class="btn bg-[#0E7A81] border-none text-white md:text-xl w-full md:px-20">Subscribe</button>
                 </div>
             </div>
         </section>

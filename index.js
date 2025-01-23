@@ -18,7 +18,7 @@ const categoryButton = async () =>{
             const categoryContainer = document.getElementById('category-containers');
 
 
-            let show = () => {
+        let show = () => {
                 data.categories.forEach(items => {
                     const div = document.createElement("div");
                     div.classList="lg:p-0 p-4"
@@ -82,13 +82,13 @@ const loadAllCard = async () => {
                 <hr>
     
     
-                    <div class="mt-5 flex justify-between">
-                        <button onclick="likeBtn('${pats.image}')" class="btn bg-white border rounded-lg"><i class="fa-regular fa-thumbs-up"></i></button>
+    <div class="mt-5 flex justify-between">
+            <button onclick="likeBtn('${pats.image}')" class="btn bg-white border rounded-lg"><i class="fa-regular fa-thumbs-up"></i></button>
 
-                     <button class="hover:bg-[#0E7A81] hover:text-white btn bg-white font-bold text-[#0E7A81] " id="adopt" onclick="adopt(5)">Adopt</button>
+            <button class="hover:bg-[#0E7A81] hover:text-white btn bg-white font-bold text-[#0E7A81] " id="adopt" onclick="adopt(5)">Adopt</button>
     
     
-                        <button class="hover:bg-[#0E7A81] hover:text-white   btn bg-white font-bold text-[#0E7A81]" onclick="patDetails('${pats.petId}')">Details</button>
+             <button class="hover:bg-[#0E7A81] hover:text-white btn bg-white font-bold text-[#0E7A81]" onclick="patDetails('${pats.petId}')">Details</button>
                         
                     </div>
                 
@@ -178,13 +178,13 @@ let sort = async () => {
                 <hr>
     
     
-                    <div class="mt-5 flex justify-between">
-                        <button onclick="likeBtn('${pats.image}')" class="btn bg-white border rounded-lg"><i class="fa-regular fa-thumbs-up"></i></button>
+    <div class="mt-5 flex justify-between">
+            <button onclick="likeBtn('${pats.image}')" class="btn bg-white border rounded-lg"><i class="fa-regular fa-thumbs-up"></i></button>
 
-                        <button class="hover:bg-[#0E7A81] hover:text-white btn bg-white font-bold text-[#0E7A81] " id="adopt" onclick="adopt(5)">Adopt</button>
+                <button class="hover:bg-[#0E7A81] hover:text-white btn bg-white font-bold text-[#0E7A81] " id="adopt" onclick="adopt(5)">Adopt</button>
     
     
-                        <button class="hover:bg-[#0E7A81] hover:text-white   btn bg-white font-bold text-[#0E7A81]" onclick="patDetails('${pats.petId}')">Details</button>
+                <button class="hover:bg-[#0E7A81] hover:text-white  btn bg-white font-bold text-[#0E7A81]" onclick="patDetails('${pats.petId}')">Details</button>
                         
                     </div>
                 
@@ -304,10 +304,12 @@ const categoryPats = async(Id)=>{
                 <hr>
     
                 <!-- button -->
-                    <div class="mt-5 flex justify-between">
-                        <button onclick="likeBtn('${pats.image}')" class="btn bg-white border rounded-lg"><i class="fa-regular fa-thumbs-up"></i></button>
-                        <button class="hover:bg-[#0E7A81] hover:text-white  btn bg-white font-bold text-[#0E7A81]" onclick="adopt()">Adopt</button>
-                        <button class="hover:bg-[#0E7A81] hover:text-white   btn bg-white font-bold text-[#0E7A81]" onclick="patDetails('${pats.petId}')">Details</button>
+        <div class="mt-5 flex justify-between">
+         <button onclick="likeBtn('${pats.image}')" class="btn bg-white border rounded-lg"><i     class="fa-regular fa-thumbs-up"></i></button>
+
+                  <button class="hover:bg-[#0E7A81] hover:text-white  btn bg-white font-bold text-[#0E7A81]" onclick="adopt()">Adopt</button>
+
+                <button class="hover:bg-[#0E7A81] hover:text-white btn bg-white font-bold text-[#0E7A81]" onclick="patDetails('${pats.petId}')">Details</button>
                         
                     </div>
                 
