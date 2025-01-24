@@ -138,6 +138,8 @@ let adopt = () => {
 
 let sortBtn = document.getElementById("sort");
 sortBtn.addEventListener("click", () => {
+    const cardContainer = document.getElementById('card-container');
+    cardContainer.classList.add("grid");
     sort()
 })
 
